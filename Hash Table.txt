@@ -1,0 +1,16 @@
+Write up on Hash Tables chained with linked list:
+
+1. Hash Table is a data structure used to store keys/value according to hash values.
+2. hash Table is an array where each element of an array is a pointer to a linked list. (Separate Chaining)
+3. Initially array is empty and gets populated as elements are added.
+4. Hash functions are used to compute an index into an array in which an element will be inserted or searched.
+5. Good Hash Function is 
+  a. Easy to compute 
+  b. Gives uniform distribution of elements over the table
+  c. Less probability of collisions.
+6. The idea of hashing is to distribute entries uniformly across an array to get O(1) time complexity of find and insert.
+7. Separate Chaining is one of the techniques used to resolve collisions ie when two elements get hashed to same index.
+
+
+
+
