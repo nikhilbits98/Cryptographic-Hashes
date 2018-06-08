@@ -9,3 +9,4 @@ WriteUp on Hash Functions:
   a. h(x) = (ax+b) mod table_size   ;where table_size is size of hash table and a,b are constants.
   b. h(x) = (x mod p) mod table_size  ;where p is some prime number.
    Although hash functons in use are much more complex with very less probability of collisions.
+6. There is an inbuilt hash functon in C++ library functional: hash<key> return hash value for input key. 
