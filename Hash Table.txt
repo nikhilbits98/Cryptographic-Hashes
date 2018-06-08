@@ -10,6 +10,15 @@ Write up on Hash Tables chained with linked list:
   c. Less probability of collisions.
 6. The idea of hashing is to distribute entries uniformly across an array to get O(1) time complexity of find and insert.
 7. Separate Chaining is one of the techniques used to resolve collisions ie when two elements get hashed to same index.
+8. How it works:
+  a. When any element is to be inserted, its index is found using Hash Function.
+  b. A new node of linked list is initialized with element's value.
+  c. If the computed index is empty, a pointer of this node is stored at the index.
+  d. If there is already a pointer at that index, that pointer is used to traverse linked list and new node is added
+     to that linked list.
+  e. When element needs to be searched, linked list at index corresponding to its hash value is traversed and searched for that element.
+9. Uniform distribution of elements over hash table ensures size of linked list is minimal and time complexity O(constant).
+
 
 
 
