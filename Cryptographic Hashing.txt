@@ -1,0 +1,24 @@
+Brief Write up on Crytographic hashing:
+
+1. In cryptography, Hash functions are used to convert variable length inputs to fixed length output.
+2. Output are called Message digest or Hash Values.
+3. Hash Functions that output n-bit output are called n-bit hash Functions. Popular ones generate between 160 to 512 bits.
+4. Properties of Good Hash Function:
+  a. Pre-image Resistance: Given a hash value it should be very hard to find orignal input value.
+  b. Second Pre-image Resistance: Given a hash and input, it shold be hard to find another input with same hash.
+  c. Collision Resistance: Hard to find two input x and y such that h(x) = h(y).
+5. Hashing algorithms involves rounds of computing hash values generally hash output of last round and next block from data as input.
+6. Initially, hash function takes a seed value from user and first block of data to comput a hash value.
+7. In next round, hash values computed above is used wiith next block of data to comupute hash value.
+8. This process goes on this completee data is hashed.
+9. Avalanche Effect: Due to process explained abovee, hash values for data that just differ by a bit is significantly different.
+10. Some popular cryptographic hash function examples are:
+  a. Message Digest (MD) - MD2, MD4, MD5, MD6
+  b. Secure Hash Functions (SHA) - SHA0, SHA1, SHA2, SHA3
+  c. Other examples are RIPEND and Whirlpool
+11. Some of the applications of cryptographic hashing is:
+  a. Password Storage: Saving a password directly is very vulnerable to attacks, so password is first encrypted using cryptographic 
+                       hashing and then stored. When any user enters id and password to log in, system compares hash value of entered
+                       password with stored hash value to check if password is correct.
+  b. Data integrity Check: When a data file is shared over network, hash functions are used to find checksums of recieved and sent file
+                           to ensure that file is authentic and no data is lost.
