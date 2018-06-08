@@ -1,0 +1,11 @@
+WriteUp on Hash Functions:
+
+1. Hash Functions are basically some mathematical functions used to convert variable input to compressed fixed size output.
+2. Output of Hash functions is called hash values or simply hash.
+3. Hash functions are consistent i.e for same input they give same hash value everytime.
+4. Hash Functons are said to be good or ideal if probability of collisions is less.
+(Collision: When for different inputs x and y, hash values come out to be same i.e. h(x) = h(y). )
+5. Some example of very simple hash functions for input x can be:
+  a. h(x) = (ax+b) mod table_size   ;where table_size is size of hash table and a,b are constants.
+  b. h(x) = (x mod p) mod table_size  ;where p is some prime number.
+   Although hash functons in use are much more complex with very less probability of collisions.
