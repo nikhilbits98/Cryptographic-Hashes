@@ -1,4 +1,3 @@
-#include<stdlib>
 #include<iostream>
 #include<string>
 
@@ -14,11 +13,16 @@ typedef struct LinkedList* List;
 struct LinkedList {
 	Node head;
 	unsigned int hashV;
+	unsigned int size;
 };
 
-int hashF(string input);
-Node createNode(string in);
-List createList(int index);
+const unsigned int table_size = 11; // Prime number
+
 unsigned int hashF(string input);
+Node createNode(string input);
+List createList(int index);
+List* createTable();
+void display(List* array);
+List* insert(List* array, string input, string userN);
 
 
