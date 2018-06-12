@@ -40,6 +40,7 @@ List* createTable() {
 
 List* insert(List* array,string input, string userN) {
 	unsigned int index = hashF(input);
+	cout << "Insert\n";
 	if (array[index]->head == NULL) {
 		array[index]->head = createNode(userN);
 		array[index]->head->str = userN;
@@ -57,6 +58,7 @@ List* insert(List* array,string input, string userN) {
 		
 	}
 	array[index]->size++;
+	cout << "InsertEnd\n";
 	return array;
 }
 
@@ -67,7 +69,7 @@ void display(List* array) {
 		Node it = array[i]->head;
 		for (int j = 0; j < array[i]->size; j++) {
 			cout << " -> ";
-			cout<< it->str;
+			cout << it->str;
 			it = it->next;
 		}
 		cout << endl;

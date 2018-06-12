@@ -16,11 +16,11 @@ struct LinkedList {
 	unsigned int size;
 };
 
-const unsigned int table_size = 11; // Prime number
+const unsigned int table_size = 3; // Prime number
 
 unsigned int hashF(string input);
 Node createNode(string input);
-List createList(int index);
+List createList(unsigned int index);
 List* createTable();
 void display(List* array);
 List* insert(List* array, string input, string userN);
