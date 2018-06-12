@@ -1,10 +1,11 @@
 #include"crypt.h"
+using namespace std;
 
-Node createNode(string input) {
-	Node news = (Node)malloc(sizeof(struct node));
-	news->next = NULL;
-	news->str = input;
-	return news;
+Node createNode() {
+	//Node newst = (Node)malloc(sizeof(struct node));
+	Node newst = new node();
+	newst->next = NULL;
+	return newst;
 }
 
 List createList(unsigned int index) {
@@ -42,7 +43,8 @@ List* insert(List* array,string input, string userN) {
 	unsigned int index = hashF(input);
 	cout << "Insert\n";
 	if (array[index]->head == NULL) {
-		array[index]->head = createNode(userN);
+		array[index]->head = createNode();
+		array[index]->head->next = NULL;
 		array[index]->head->str = userN;
 	}
 	else {
@@ -51,7 +53,7 @@ List* insert(List* array,string input, string userN) {
 		array[index]->head->next = temp;
 		array[index]->head->str = userN;
 		*/
-		Node temp = createNode(userN);
+		Node temp = createNode();
 		temp->next = array[index]->head;
 		array[index]->head = temp;
 		array[index]->head->str = userN;		

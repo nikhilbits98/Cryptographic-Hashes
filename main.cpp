@@ -3,16 +3,14 @@
 int main() {
 	int i = 0;
 	List* array = createTable();
-	//cout << i++ << endl;
-	insert(array, "abcd", "Abc");
-	//cout << i++ << endl;
-	insert(array, "efdgs", "23hfh");
-	//cout << i++ << endl;
-	insert(array, "dgsgs", "3567");
-	//cout << i++ << endl;
-	insert(array, "sfse", "1232");
-	//cout << i++ << endl;
-  	//cout << i++ << endl;
+	
+	string t1 = "abcd";
+	insert(array, "abcd", t1);
+	insert(array, "efdgs", "24334g");
+	insert(array, "dgsgs", "3efsdf");
+	insert(array, "sfse", "1sdfs");
+	insert(array,"fw4rw","234ds");
+  	
 	display(array);
 
 	return 0;
